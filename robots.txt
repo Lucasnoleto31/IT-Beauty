@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /apresentacao-curso
+Disallow: /apresentacao-curso.html
+
+Sitemap: https://www.dermostrit.com.br/sitemap.xml
