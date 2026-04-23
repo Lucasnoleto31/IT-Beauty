@@ -1683,7 +1683,8 @@
     overflow:hidden;
     border-radius:2px;
   }
-  .video-thumb video{
+  .video-thumb video,
+  .video-thumb img{
     position:absolute;
     inset:0;
     width:100%;height:100%;
@@ -2845,7 +2846,7 @@
       <div class="video-main">
         <div class="video-player" data-video="1">
           <video id="mainVideo" preload="metadata" playsinline poster="50.jpeg">
-            <source src="video1.MOV" type="video/mp4">
+            <source src="video4.MP4" type="video/mp4">
             Seu navegador não suporta este formato de vídeo.
           </video>
           <span class="video-tag">Depoimento em destaque</span>
@@ -2853,47 +2854,17 @@
           <span class="video-duration" id="videoDuration">Assista</span>
         </div>
         <div class="video-caption">
-          <h4 id="videoCaptionTitle">"O método transformou minha confiança técnica."</h4>
-          <p class="person" id="videoCaptionPerson">Aluna do Método · Biomédica Esteta</p>
+          <h4 id="videoCaptionTitle">"Finalmente entrego resultados reais."</h4>
+          <p class="person" id="videoCaptionPerson">Aluna do Método · Esteticista</p>
         </div>
       </div>
 
       <aside class="video-sidebar">
         <div class="video-sidebar-title">Mais Depoimentos</div>
 
-        <div class="video-item active" data-src="video1.MOV" data-title='"O método transformou minha confiança técnica."' data-person="Aluna do Método · Biomédica Esteta">
+        <div class="video-item active" data-src="video4.MP4" data-title='"Finalmente entrego resultados reais."' data-person="Aluna do Método · Esteticista">
           <div class="video-thumb">
-            <video src="video1.MOV#t=0.5" preload="metadata" muted playsinline></video>
-          </div>
-          <div class="video-info">
-            <h5>Confiança técnica e autoridade</h5>
-            <div class="meta"><span>Assistir</span><span>Biomédica</span></div>
-          </div>
-        </div>
-
-        <div class="video-item" data-src="video2.MOV" data-title='"Meu ticket triplicou em três meses."' data-person="Aluna do Método · Estética Avançada">
-          <div class="video-thumb">
-            <video src="video2.MOV#t=0.5" preload="metadata" muted playsinline></video>
-          </div>
-          <div class="video-info">
-            <h5>Resultado em faturamento</h5>
-            <div class="meta"><span>Assistir</span><span>Estética</span></div>
-          </div>
-        </div>
-
-        <div class="video-item" data-src="video3.MOV" data-title='"Me posicionei como referência na cidade."' data-person="Aluna do Método · Dermo Especialista">
-          <div class="video-thumb">
-            <video src="video3.MOV#t=0.5" preload="metadata" muted playsinline></video>
-          </div>
-          <div class="video-info">
-            <h5>Posicionamento de mercado</h5>
-            <div class="meta"><span>Assistir</span><span>Dermato</span></div>
-          </div>
-        </div>
-
-        <div class="video-item" data-src="video4.MP4" data-title='"Finalmente entrego resultados reais."' data-person="Aluna do Método · Esteticista">
-          <div class="video-thumb">
-            <video src="video4.MP4#t=0.5" preload="metadata" muted playsinline></video>
+            <img src="50.jpeg" alt="Prévia do depoimento" loading="lazy">
           </div>
           <div class="video-info">
             <h5>Resultados reais em estrias</h5>
@@ -2903,7 +2874,7 @@
 
         <div class="video-item" data-src="video6.MOV" data-title='"Minhas clientes voltam. E me indicam sem parar."' data-person="Aluna do Método · Clínica Própria">
           <div class="video-thumb">
-            <video src="video6.MOV#t=0.5" preload="metadata" muted playsinline></video>
+            <img src="31.jpeg" alt="Prévia do depoimento" loading="lazy">
           </div>
           <div class="video-info">
             <h5>Fidelização e indicação</h5>
@@ -2913,7 +2884,7 @@
 
         <div class="video-item" data-src="video7.MOV" data-title='"Minha autoridade mudou de patamar."' data-person="Aluna do Método · Profissional Avançada">
           <div class="video-thumb">
-            <video src="video7.MOV#t=0.5" preload="metadata" muted playsinline></video>
+            <img src="43.jpeg" alt="Prévia do depoimento" loading="lazy">
           </div>
           <div class="video-info">
             <h5>Autoridade e reconhecimento</h5>
@@ -2923,7 +2894,7 @@
 
         <div class="video-item" data-src="video8.MOV" data-title='"Meu atendimento virou referência técnica."' data-person="Aluna do Método · Estética Clínica">
           <div class="video-thumb">
-            <video src="video8.MOV#t=0.5" preload="metadata" muted playsinline></video>
+            <img src="54.jpeg" alt="Prévia do depoimento" loading="lazy">
           </div>
           <div class="video-info">
             <h5>Referência técnica</h5>
@@ -2933,7 +2904,7 @@
 
         <div class="video-item" data-src="video9.MOV" data-title='"Hoje eu entrego o resultado que sempre quis."' data-person="Aluna do Método · Biomédica">
           <div class="video-thumb">
-            <video src="video9.MOV#t=0.5" preload="metadata" muted playsinline></video>
+            <img src="57.jpeg" alt="Prévia do depoimento" loading="lazy">
           </div>
           <div class="video-info">
             <h5>Entrega e confiança</h5>
@@ -2941,19 +2912,9 @@
           </div>
         </div>
 
-        <div class="video-item" data-src="video10.MOV" data-title='"O método me deu clareza e resultado em cada atendimento."' data-person="Aluna do Método · Estética Avançada">
-          <div class="video-thumb">
-            <video src="video10.MOV#t=0.5" preload="metadata" muted playsinline></video>
-          </div>
-          <div class="video-info">
-            <h5>Clareza e resultado</h5>
-            <div class="meta"><span>Assistir</span><span>Avançada</span></div>
-          </div>
-        </div>
-
         <div class="video-item" data-src="37.MOV" data-title='"Cada caso virou uma prova do meu protocolo."' data-person="Aluna do Método · Estética Avançada">
           <div class="video-thumb">
-            <video src="37.MOV#t=0.5" preload="metadata" muted playsinline></video>
+            <img src="64.jpeg" alt="Prévia do depoimento" loading="lazy">
           </div>
           <div class="video-info">
             <h5>Protocolo comprovado</h5>
@@ -2963,7 +2924,7 @@
 
         <div class="video-item" data-src="30.MOV" data-title='"Finalmente domino a regeneração dérmica."' data-person="Aluna do Método · Dermo Especialista">
           <div class="video-thumb">
-            <video src="30.MOV#t=0.5" preload="metadata" muted playsinline></video>
+            <img src="89.jpeg" alt="Prévia do depoimento" loading="lazy">
           </div>
           <div class="video-info">
             <h5>Domínio da regeneração</h5>
@@ -2973,7 +2934,7 @@
 
         <div class="video-item" data-src="29.MOV" data-title='"Minha agenda lotou depois do método."' data-person="Aluna do Método · Clínica Própria">
           <div class="video-thumb">
-            <video src="29.MOV#t=0.5" preload="metadata" muted playsinline></video>
+            <img src="28.jpeg" alt="Prévia do depoimento" loading="lazy">
           </div>
           <div class="video-info">
             <h5>Agenda cheia</h5>
@@ -2983,7 +2944,7 @@
 
         <div class="video-item" data-src="8.MOV" data-title='"Hoje entrego um resultado que ninguém entrega."' data-person="Aluna do Método · Estética Avançada">
           <div class="video-thumb">
-            <video src="8.MOV#t=0.5" preload="metadata" muted playsinline></video>
+            <img src="90.jpeg" alt="Prévia do depoimento" loading="lazy">
           </div>
           <div class="video-info">
             <h5>Diferencial técnico</h5>
@@ -3249,9 +3210,9 @@
       return `${m}:${r.toString().padStart(2,'0')}`;
     };
 
-    // Marca itens cujo vídeo falhou como "em breve" (degradação graciosa)
+    // Marca itens cujo preview falhou como "em breve" (degradação graciosa)
     items.forEach(item => {
-      const thumb = item.querySelector('.video-thumb video');
+      const thumb = item.querySelector('.video-thumb img, .video-thumb video');
       if(thumb){
         thumb.addEventListener('error', () => {
           item.classList.add('soon');
@@ -3285,6 +3246,14 @@
       });
     }
 
+    const mimeFor = src => {
+      const ext = (src.split('.').pop() || '').toLowerCase();
+      if(ext === 'mov') return 'video/quicktime';
+      if(ext === 'webm') return 'video/webm';
+      if(ext === 'm4v') return 'video/x-m4v';
+      return 'video/mp4';
+    };
+
     items.forEach(item => {
       item.addEventListener('click', () => {
         if(item.classList.contains('soon')) return;
@@ -3294,7 +3263,9 @@
         if(person) person.textContent = item.dataset.person || person.textContent;
         if(video && item.dataset.src){
           video.pause();
-          video.querySelector('source').src = item.dataset.src;
+          const source = video.querySelector('source');
+          source.src = item.dataset.src;
+          source.type = mimeFor(item.dataset.src);
           video.load();
           player.classList.remove('playing');
           video.controls = false;
